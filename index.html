@@ -27,8 +27,25 @@
       border: 0;
     }
   </style>
+<style id="mach-home-navigation-style">
+/* Screen navigation only. Keep outside all generated artwork. */
+.mach-home-nav{display:block;max-width:100%;margin:0 0 12px;box-sizing:border-box}
+.mach-home-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;max-width:100%;padding:4px 8px;box-sizing:border-box;border-radius:6px;background:#fff;text-decoration:none}
+.mach-home-link img{display:block;width:168px;max-width:100%;height:auto;object-fit:contain}
+.mach-home-link:focus-visible{outline:3px solid #165dcb;outline-offset:3px}
+@media print{.mach-home-nav,.mach-home-link{display:none!important}}
+
+.mach-screen-bar{padding:8px 24px;margin:0;background:#fff}
+
+body{display:flex;flex-direction:column;height:100vh;height:100dvh;overflow:hidden}body>.mach-home-nav{flex:0 0 auto}body>iframe{flex:1 1 auto;min-height:0;height:0}
+</style>
 </head>
 <body>
+<div class="mach-home-nav mach-screen-bar" data-html2canvas-ignore="true">
+  <a class="mach-home-link" href="https://erakeun.github.io/ERICAAI/" aria-label="MACH 홈으로 이동">
+    <img src="assets/mach-three-speed-lines.png" alt="MACH" decoding="async">
+  </a>
+</div>
   <iframe
     src="https://script.google.com/macros/s/AKfycbyGEcwIDYx_bWsvZSEnzUNFCM2OxqcyEvMRwSquiRAUxckoILAatpprLY_HqOByaICK/exec"
     title="하냥이 인형탈 대여"
